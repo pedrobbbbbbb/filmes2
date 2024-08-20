@@ -1,0 +1,110 @@
+/* Estilo básico do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #534d4d;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #252121;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Estilo da barra de pesquisa */
+.search-container {
+    padding: 10px;
+    text-align: center;
+    background-color: #252121;
+}
+
+.search-container input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo dos filmes */
+section#filmeLista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.filme {
+    background-color: #ffffff;
+    border: 1px solid #252121;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(30% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das imagens */
+.filme img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Estilo das críticas e avaliações */
+.critica {
+    margin-top: 10px;
+}
+
+.critica h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+.avaliacao {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .filme {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .filme {
+        width: calc(100% - 40px);
+    }
+
+    .search-container input[type="text"] {
+        width: 90%;
+        padding-bottom: 60px;
+    }
+}
